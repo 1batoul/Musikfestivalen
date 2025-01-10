@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interaktivt Formulär</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <form>
+            <h1>Registreringsformulär</h1>
+
+
+    <label for="username">Användarnamn *</label>
+    <input type="text" name="username" required>
+
+    <label for="email">Epostadress *</label>
+    <input type="email" name="email" required>
+
+    <label for="password">Lösenord *</label>
+    <input type="password" name="password" required>
+
+    <!-- Checkboxar -->
+    <fieldset>
+      <legend>Välj dina intressen</legend>
+      <input type="checkbox" id="sport" name="interest" value="sport">
+      <label for="sport">Sport</label>
+
+      <input type="checkbox" id="musik" name="interest" value="musik">
+      <label for="musik">Musik</label>
+
+      <input type="checkbox" id="Film" name="interest" value="Film">
+      <label for="Film">Film</label>
+
+      <input type="checkbox" id="Dans" name="interest" value="Dans">
+      <label for="Dans">Dans</label>
+    </fieldset>
+
+    <!-- Reglage (range input) -->
+    <label for="preference">Hur nöjd är du? (0-10)</label>
+    <input type="range" id="preference" name="preference" min="0" max="10" value="5">
+
+    <!-- Dropdown-lista (select) -->
+    <label for="color">Välj din favoritfärg</label>
+    <select id="color" name="color">
+      <option value="red">Röd</option>
+      <option value="blue">Blå</option>
+      <option value="green">Grön</option>
+      <option value="yellow">Gul</option>
+      <option value="pink">Rosa</option>
+      <option value="purple">lila</option>
+    </select>
+    <label for="Birth-month">Välj din födelsemånad</label>
+    <select id="Birth-month" name="Birth-month">
+      <option value="January">Januari</option>
+      <option value="February">Februari</option>
+      <option value="March">Mars</option>
+      <option value="April">Apil</option>
+      <option value="May">Maj</option>
+      <option value="June">Juni</option>
+      <option value="July">Juli</option>
+      <option value="August">Augusti</option>
+      <option value="September">September</option>
+      <option value="October">Oktober</option>
+      <option value="November">November</option>
+      <option value="December">December</option>
+    
+    </select>
+    <!-- Submit-knapp -->
+    <button type="submit">Skicka in</button>
+
+      </form>
+    </main>
+  </body>
+</html>

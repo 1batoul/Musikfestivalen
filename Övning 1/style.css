@@ -1,0 +1,9 @@
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+    color: green;
+    font-weight: bold;
+}

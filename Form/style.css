@@ -1,0 +1,82 @@
+/* Grundläggande styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  /* Formulär */
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  /* Etiketter och fält */
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"], 
+  input[type="email"],
+  input[type="password"],
+ 
+  select {
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+ 
+  
+  /* Checkboxar */
+  fieldset {
+    margin-bottom: 15px;
+    border: none;
+
+  }
+  
+  /* Submit-knappen */
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: purple;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Fokus-styling för tillgänglighet */
+  input:focus,
+  select:focus,
+  button:focus {
+    outline: 2px hotpink
+  }
+  
+  /* Reglagets stil */
+  input[type="range"] {
+    accent-color: hotpink;
+  }
+  
+  /* Dropdown-listans hover-effekt */
+  select:hover {
+    border-color: hotpink;
+  } 

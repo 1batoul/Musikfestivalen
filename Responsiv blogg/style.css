@@ -1,0 +1,165 @@
+/* Allmän styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Toppmeny */
+.top-menu {
+    text-align: center;
+    padding: 1rem;
+    background-color: #0077cc;
+    color: white;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.mobile-menu {
+    margin-top: 1rem;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0.5rem 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.subscribe-btn {
+    display: block;
+    margin: 1rem auto;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.subscribe-btn:hover {
+    background-color: #ff4500;
+}
+
+/* Huvudsektion */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.sidebar {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 0.5rem 0;
+}
+
+.sidebar a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+.blog-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.blog-card {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.blog-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.blog-card h3 {
+    margin: 0.5rem;
+    color: #0077cc;
+}
+
+.blog-card p {
+    margin: 0.5rem;
+}
+
+/* Sidfot */
+.footer {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+
+.footer div {
+    margin-bottom: 1rem;
+}
+
+.footer h3 {
+    margin-top: 0;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .main-content {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .sidebar {
+        flex: 1;
+        margin-bottom: 0;
+    }
+
+    .blog-gallery {
+        flex: 3;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .blog-card {
+        flex: 1 1 calc(50% - 1rem);
+    }
+}
+
+@media (min-width: 1024px) {
+    .blog-card {
+        flex: 1 1 calc(33.33% - 1rem);
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-around;
+        text-align: left;
+    }
+}

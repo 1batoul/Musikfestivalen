@@ -1,0 +1,196 @@
+/* Allmän styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Toppmeny */
+.top-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0077cc;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+.top-menu .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.subscribe-btn {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.subscribe-btn:hover {
+    background-color: #ff4500;
+}
+
+/* Huvudsektion */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+/* Galleri */
+.blog-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    flex: 3;
+}
+
+.blog-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(33.33% - 1rem);
+}
+
+.blog-card img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+.blog-card h3 {
+    margin: 0.5rem;
+    color: #0077cc;
+}
+
+.blog-card p {
+    margin: 0.5rem;
+    color: #555;
+}
+
+/* Sidokolumn */
+.sidebar {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.sidebar h2 {
+    color: #0077cc;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 0.5rem 0;
+}
+
+.sidebar ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Sidfot */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #333;
+    color: white;
+    padding: 2rem;
+}
+
+.footer div {
+    flex: 1;
+    margin: 0 1rem;
+}
+
+.footer h3 {
+    margin-top: 0;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin: 0.5rem 0;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsiv design */
+@media (max-width: 768px) {
+    .blog-card {
+        width: calc(50% - 1rem);
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sidebar {
+        order: 1;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-card {
+        width: 100%;
+    }
+
+    .top-menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .subscribe-btn {
+        align-self: center;
+        margin-top: 1rem;
+    }
+}

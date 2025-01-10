@@ -1,0 +1,80 @@
+/* Allmänna stilar */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header-styling */
+header {
+    background-color: #0077cc;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Profilsektion */
+#profil {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.profilbild {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 1rem;
+}
+
+#profil p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Intressen och favoriter */
+section {
+    margin: 2rem;
+    padding: 1rem;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #0077cc;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Sidfot */
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
