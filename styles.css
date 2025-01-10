@@ -1,0 +1,138 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fefefe;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+header {
+  background: linear-gradient(90deg, #fff01f, #ff6a00, #ee0979);
+  color: white;
+  padding: 3rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+.filter-section {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1rem;
+  margin: 1rem 0;
+  padding: 1rem;
+  background: linear-gradient(to left, #fff01f, #ff6a00, #ee0979);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.filter-section label {
+  font-weight: bold;
+  color: #fff;
+}
+
+.filter-section select {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  font-size: 1rem;
+}
+
+.artist-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  margin: auto;
+}
+
+.artist-card {
+  background: white;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  max-width: 100%;
+  flex: 1 1 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.artist-card h3 {
+  color: #ee0979;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.artist-card p {
+  margin: 0.5rem 0;
+  color: #666;
+}
+
+.artist-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-color: #ee0979;
+}
+
+footer {
+  background: linear-gradient(90deg, #fff01f, #ff6a00, #ee0979);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 481px) {
+  .filter-section {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .artist-card {
+    flex: 1 1 calc(50% - 1rem);
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .artist-container {
+    gap: 1.5rem;
+    padding: 2rem;
+    max-width: 1200px;
+  }
+
+  .artist-card {
+    flex: 1 1 calc(33.333% - 1.5rem);
+    max-width: 300px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+}
